@@ -1,18 +1,19 @@
 #include "main.h"
-/**
- * main - prints putchar
- * Return : always 0
- */
+/
+ * main - entry block
+ * @void: no argument
+ * Return: 0
+ /
 int main(void)
 {
-	_putchar('_');
-	_putchar('p'); 
-	_putchar('u');
-        _putchar('t');
-        _putchar('c');
-	_putchar('h');
-	_putchar('a');
-        _putchar('r');
-        _putchar('\n');
+  char haile[] = "_putchar";
 
-return (0);
+  int c;
+
+  for (c = 0; c < 8; c++)
+  {
+    _putchar(haile[c]);
+  }
+  _putchar('\n');
+  return (0);
+}
