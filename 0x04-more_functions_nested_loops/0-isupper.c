@@ -2,16 +2,22 @@
 
 /**
  * _isupper - Check if a letter is upper case
- *0x: The number to be checked
- *
+ *@c: The number to be checked
  * Return: 1 for upper case letter or 0 for any else
  */
-int _isupper(int x)
+int _isupper(int c)
 {
-         if (x >= 65 && x <= 90)
-         { I
-                    return(1);
-         }
+        char uppercase = 'A';
+	int isupper = 0;
 
-           return (0);
+	for (; uppercase <= 'Z'; uppercase++)
+	{
+		if (c == uppercase)
+		{
+			isupper = 1;
+			break;
+		}
+	}
+
+	return (isupper);
 }
