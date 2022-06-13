@@ -19,7 +19,6 @@ return (i);
 
 /**
  * rev_string - reverses string in place, without printing it
- *
  * @s: string to reverse
  * Return: void
  */
@@ -31,10 +30,10 @@ char a, z;
 len = _strlen(s) - 1;
 i = 0;
 while (i < len)
-    {
-      a = s[i];
-      z = s[len];
-      s[i++] = z;
-      s[len--] = a;
-    }
+{
+a = s[i];
+z = s[len];
+s[i++] = z;
+s[len--] = a;
+}
 }
